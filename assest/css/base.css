@@ -1,0 +1,63 @@
+*, html {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.hr1 {
+    margin: 20px 0;
+    border: 1px solid #e9e9e9;
+}
+
+.hr2{
+    margin: 5px 0;
+    border: 1px solid #e9e9e9;
+}
+
+.grid {
+    width: 100%;
+    padding: 0;
+}
+
+.grid.wide {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.l-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.l-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .total {
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .l-1 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
